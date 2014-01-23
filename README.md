@@ -1,7 +1,7 @@
 Ruby on Rails Raspberry Pi GPIO Control
 ================================
 
-Raspberry Pi Control based on Ruby on Rails 4 and websockets
+Raspberry Pi Control based on Ruby on Rails 4 and websockets that allow you to 'bind' GPIO (IN/OUT) pins to web page controls.
 
 ## How To
 
