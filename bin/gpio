@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'config', 'environment'))
+
+require 'rpi/worker'
+require 'rpi/command'
+Rpi::Command.new(ARGV).daemonize
+
+
+# For testing
+#worker = Rpi::Worker.new(host: '192.168.1.213', port: 8787, logger: Logger.new("#{Rails.root}/log/drb.log", 10, 10.megabytes))
+#worker.start

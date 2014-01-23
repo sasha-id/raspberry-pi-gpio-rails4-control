@@ -1,0 +1,36 @@
+<div id="gpio" data-uri="<%= request.host %>:<%= request.port %>/websocket">
+
+  <div class="container">
+    <div title="Pin #7 (OUT)" class="bs-docs-example">
+
+      <div class="make-switch" data-pin="7" data-direction="out" data-watch=true id="test1">
+        <input type="checkbox" checked>
+      </div>
+
+      <div class="make-switch" data-pin="7" data-direction="out" data-watch=true id="test2" data-on="danger">
+        <input type="checkbox" checked>
+      </div>
+
+      <div style="display: inline-block">
+        <button data-pin="7" data-direction="out" id="send" type="button" class="btn btn-success">Click</button>
+      </div>
+
+    </div>
+
+    <div title="Pin #8 (OUT)" class="bs-docs-example">
+      <div class="switch-off make-switch" data-on="success" id="toggle-state-switch" data-pin="8" data-watch=true data-direction="out">
+          <input type="checkbox" >
+      </div>
+    </div>
+
+    <div title="Pin #25 (IN)" class="bs-docs-example">
+      <div class="switch-off make-switch" id="toggle-state-switch" data-pin="25" data-watch=true data-direction="in" data-pull="up" data-invert=false data-on="warning">
+          <input type="checkbox" >
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
